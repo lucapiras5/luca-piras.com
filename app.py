@@ -9,6 +9,7 @@ class Layout:
         self.description = description or title
         self.html = f"""
         <!DOCTYPE html>
+        <html lang="en">
         <head>
         <title>{esc(title)}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,9 +34,10 @@ class Layout:
         </div>
         </header>
         {body}
-        <footer>&copy; Luca Piras, 2024, CC BY-SA and AGPL-licensed, see <a href="/legal-notices">Legal notices</a>.</footer>
+        <footer>&copy; Luca Piras, 2024, CC BY-SA and AGPL-licensed, see the <a href="/legal-notices">legal notices</a>.</footer>
         </div>
         </body>
+        </html>
         """
 
 app = Flask(__name__)
