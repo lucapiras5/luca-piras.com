@@ -80,3 +80,14 @@ def notes():
 """)
 
     return Layout(title="Personal Knowledge", body=body).html
+
+@app.get("/news")
+def news():
+    body = read_markdown_file("pages/news.md")
+    return Layout(title="News", body=body).html
+
+@app.get("/future-plans")
+def future_plans():
+    body = read_markdown_file("pages/future-plans.md")
+    return Layout(title="Future Plans", body=body).html
+
