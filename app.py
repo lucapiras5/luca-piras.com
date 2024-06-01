@@ -1,6 +1,6 @@
 from flask import Flask
 from markupsafe import escape as esc
-from markdown import markdown, markdownFromFile
+from markdown import markdown
 
 class Layout:
     def __init__(self, title, body, description=''):
@@ -12,6 +12,9 @@ class Layout:
         <html lang="en">
         <head>
         <title>{esc(title)}</title>
+
+        <link rel="icon" href="/static/favicon.png">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
