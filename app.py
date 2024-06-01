@@ -94,3 +94,7 @@ def future_plans():
     body = read_markdown_file("pages/future-plans.md")
     return Layout(title="Future Plans", body=body).html
 
+@app.get("/reasons-for-writing-in-english")
+def reasons_for_writing_in_english():
+    body = read_markdown_file("pages/reasons-for-writing-in-english.md")
+    return Layout(title="Reasons for writing in English", body=body).html
