@@ -1,10 +1,11 @@
 [tool.poetry]
+package-mode = false
 name = "luca-piras-com"
 version = "0.1.0"
 description = "Personal website."
-authors = ["Luca <lucapiras13@protonmail.com>"]
+authors = ["Luca Piras <lucapiras13@protonmail.com>"]
 license = "AGPL-v3.0-or-later"
-readme = "README.md"
+readme = "readme.md"
 packages = [{include = "luca_piras"}]
 
 [tool.poetry.dependencies]
