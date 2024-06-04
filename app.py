@@ -55,10 +55,6 @@ class Layout:
 
 app = Flask(__name__)
 
-with open('pages/pages.toml', 'r') as pages_fp:
-    pages = tomli.loads(pages_fp.read())
-    print(pages)
-
 def read_file(filename: str):
     with open(filename, "r") as fp:
         return fp.read()
