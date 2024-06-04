@@ -2,24 +2,24 @@
 
 ## Set-up
 
-Install Python, Pipenv and Git. The specific package names may change based on your distribution/OS.
+Install Python, Poetry and Git. The specific package names may change based on your distribution/OS.
 
 Debian and Ubuntu:
 
 ```
-apt install python3 python-is-python3 pipenv git
+apt install python3 python-is-python3 python3-poetry git
 ```
 
 Arch:
 
 ```
-pacman -S python pipenv git
+pacman -S python poetry git
 ```
 
 FreeBSD:
 
 ```
-pkg install python39 py39-pipenv git
+pkg install python39 py39-poetry git
 ```
 
 Clone this repository:
@@ -32,25 +32,25 @@ Install dependencies:
 
 ```
 cd luca-piras.com
-pipenv install
+poetry install
 ```
 
 ## Maintenance
 
-Start the venv:
+Start the venv, so you can use tasks:
 
 ```
-pipenv shell
+poetry shell
 ```
 
-Launch the server with Gunicorn:
+Launch a production server with Gunicorn:
 
 ```
-gunicorn app:app
+task prod
 ```
 
 Rebuild the CV (requires TeXLive):
 
 ```
-./mkcv.sh
+task cv
 ```

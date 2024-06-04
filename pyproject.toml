@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "luca-piras-com"
+version = "0.1.0"
+description = "Personal website."
+authors = ["Luca <lucapiras13@protonmail.com>"]
+license = "AGPL-v3.0-or-later"
+readme = "README.md"
+packages = [{include = "luca_piras"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^3.0.3"
+Markdown = "^3.6"
+gunicorn = "^22.0.0"
+taskipy = "^1.12.2"
+
+[tool.taskipy.tasks]
+dev = { cmd = "flask run --debug --host 0.0.0.0", help = "Start Flask in development mode, and listen on all interfaces." }
+prod = { cmd = "gunicorn app:app", help = "Start Gunicorn, and listen only on localhost." }
+cv = { cmd = "./mkcv.sh", help = "Rebuild CV (requires TeXLive)." }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
