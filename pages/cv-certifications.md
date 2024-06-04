@@ -1,22 +1,25 @@
-# CV and Certifications
+<!--
+title = "CV / Resume"
+description = "CV/Resume"
+-->
 
 ## CV
 
-[**Curriculum vitae**](/static/Piras_Luca_CV.pdf): also includes my contact information.
+[Curriculum vitae](/static/Piras_Luca_CV.pdf): also includes my contact information.
 
 ## Law School
 
-[**Autodichiarazione sostitutiva della laurea con voti degli esami**](static/Dichiarazione_sostitutiva_laurea_voti.pdf) (*Self-signed degree certificate with exam scores*): proves that I've obtained my law degree at the University of Bologna. It contains a list of scores for each exam, and the final score. I obtained the maximum score, **110/110 _cum laude_**.
+[Autodichiarazione sostitutiva della laurea con voti degli esami](static/Dichiarazione_sostitutiva_laurea_voti.pdf) (*Self-signed degree certificate with exam scores*): proves that I've obtained my law degree at the University of Bologna. It contains a list of scores for each exam, and the final score. I obtained the maximum score, **110/110 _cum laude_**.
 
 ## Language Certifications
 
-[**Cambridge English, C1 Level**](/static/Cambridge_FCE_C1.pdf): I obtained an A grade on my *Cambridge English: First* test, which translates to C1 on the CEFR scale. See [here](https://web.archive.org/web/20240225141216/https://www.cambridgeenglish.org/images/167506-cambridge-english-scale-factsheet.pdf) for details. I'm aiming to obtain a C2 level certificate by the end of 2024.
+[Cambridge English, C1 Level](/static/Cambridge_FCE_C1.pdf): I obtained an A grade on my *Cambridge English: First* test, which translates to C1 on the CEFR scale. See [here](https://web.archive.org/web/20240225141216/https://www.cambridgeenglish.org/images/167506-cambridge-english-scale-factsheet.pdf) for details. I'm aiming to obtain a C2 level certificate by the end of 2024.
 
 ## Digital Forensics
 
 ### 2024
 
-[**Uso del software libero e open source per l'analisi scientifica della prova digitale nell'informatica forense**](/static/informatica-forense/Tesi_Informatica_Forense_2024.pdf)
+[Uso del software libero e open source per l'analisi scientifica della prova digitale nell'informatica forense](/static/informatica-forense/Tesi_Informatica_Forense_2024.pdf)
 (*On using free and open source software to scientifically analyze digital evidence in digital forensics*):
 my final dissertation. Currently it's only available in Italian, but an English translation is in the works.
 The [source files](https://github.com/lucapiras5/tesi-informatica-forense) are available.
@@ -41,7 +44,7 @@ The "[*Personal Knowledge*](/personal-knowledge)" section of this website acts a
 
 ### 2020
 
-[**Alcune osservazioni sulla digital evidence &ndash; caratteristiche, ricerca, valutazione**](/static/informatica-forense/Alcune_osservazioni_sulla_digital_evidence_2020.pdf)
+[Alcune osservazioni sulla digital evidence &ndash; caratteristiche, ricerca, valutazione](/static/informatica-forense/Alcune_osservazioni_sulla_digital_evidence_2020.pdf)
 (*Some observations on digital evidence &ndash; its characteristics, investigation, evaluation*):
 a research paper written while attending the digital forensics course in university.
 

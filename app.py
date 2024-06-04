@@ -1,17 +1,21 @@
-from flask import Flask
+from flask import Flask, request
 from markupsafe import escape as esc
 from markdown import markdown
+import tomli
+import re
+
 
 class Layout:
     def __init__(self, title, body, description=''):
-        self.title = title
+        self.title = esc(title)
         self.body = body
-        self.description = description or title
+        self.meta_description = esc(description or title)
+        self.description = esc(description)
         self.html = f"""
         <!DOCTYPE html>
         <html lang="en">
         <head>
-        <title>{esc(title)}</title>
+        <title>{self.title}</title>
 
         <link rel="icon" href="/static/favicon.png">
 
@@ -22,9 +26,9 @@ class Layout:
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta property="og:title" content="{esc(title)}">
+        <meta property="og:title" content="{self.title}">
         <meta property="og:image" content="/static/avatar.jpg">
-        <meta property="og:description" content="{esc(self.description)}">
+        <meta property="og:description" content="{self.meta_description}">
 
         </head>
 
@@ -38,6 +42,9 @@ class Layout:
         <div class="link"><a href="/news">News</a></div>
         <div class="link"><a href="/future-plans">Future Plans</a></div>
         </div>
+
+        <h1>{self.title}</h1>
+        <em>{self.description}</em>
         </header>
         {body}
         <footer>&copy; Luca Piras, 2024, CC BY-SA and AGPL-licensed, see the <a href="/legal-notices">legal notices</a>.</footer>
@@ -48,53 +55,34 @@ class Layout:
 
 app = Flask(__name__)
 
+with open('pages/pages.toml', 'r') as pages_fp:
+    pages = tomli.loads(pages_fp.read())
+    print(pages)
+
 def read_file(filename: str):
     with open(filename, "r") as fp:
         return fp.read()
 
 def read_markdown_file(filename: str):
-    return markdown(read_file(filename))
+    return markdown(read_file(filename), extensions=['smarty', 'fenced_code'])
+
+def page_from_markdown_file(filename: str):
+    rendered = read_markdown_file(filename)
+    # Extract metadata block
+    pattern = r"""<!--
+(.+?)
+-->"""
+    block = re.search(pattern, rendered, re.DOTALL)
+    if block is None:
+        raise ValueError("Page is missing metadata block")
+    metadata = tomli.loads(block.group(1))
+    print(repr(metadata))
+    return Layout(body=rendered, **metadata).html
 
 @app.get("/")
 def homepage():
-    body = read_markdown_file("pages/index.md")
-    return Layout(title='Luca Piras', body=body).html
+    return page_from_markdown_file("pages/index.md")
 
-@app.get("/cv-certifications")
-def cv_and_certifications():
-    body = read_markdown_file("pages/cv-certifications.md")
-    return Layout(title="Luca Piras' CV and resume", body=body).html
-
-@app.get("/legal-notices")
-def legal_notices():
-    body = read_markdown_file("pages/legal-notices.md")
-    return Layout(title="Legal Notices", body=body).html
-
-@app.get("/personal-knowledge")
-def notes():
-    body = markdown("""
-# Personal Knowledge
-
-## Notes on Programming
-
-## Notes on Linux
-
-## Notes on Digital Forensics
-""")
-
-    return Layout(title="Personal Knowledge", body=body).html
-
-@app.get("/news")
-def news():
-    body = read_markdown_file("pages/news.md")
-    return Layout(title="News", body=body).html
-
-@app.get("/future-plans")
-def future_plans():
-    body = read_markdown_file("pages/future-plans.md")
-    return Layout(title="Future Plans", body=body).html
-
-@app.get("/reasons-for-writing-in-english")
-def reasons_for_writing_in_english():
-    body = read_markdown_file("pages/reasons-for-writing-in-english.md")
-    return Layout(title="Reasons for writing in English", body=body).html
+@app.get("/<page_id>")
+def get_page(page_id):
+    return page_from_markdown_file(f"pages/{page_id}.md")

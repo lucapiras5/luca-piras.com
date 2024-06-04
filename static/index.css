@@ -1,7 +1,9 @@
 :root {
-  --background-color: #f5f5f5; /* Light gray background */
-  --text-color: #333333; /* Dark gray text */
+  --background-color: #071A26; /* Light gray background */
+  --text-color: #eee; /* Dark gray text */
 }
+
+a { color: #F2B705; }
 
 /* Body */
 body {
@@ -9,7 +11,7 @@ body {
   color: var(--text-color);
   font-family: "IBM Plex Sans", sans-serif;
   line-height: 1.6;
-  font-size: 14pt;
+  font-size: 1.15rem;
   margin: 0;
   padding: 0;
 }
@@ -40,6 +42,7 @@ h1, h2, h3 {
 }
 
 header, footer {
+    font-size: 1.1rem;
     text-align: center;
     margin: 3rem 0;
 }
@@ -68,6 +71,4 @@ header, footer {
     gap: 2rem;
 }
 
-footer {
-    opacity: 0.8;
-}
+code { word-break: break-all; }

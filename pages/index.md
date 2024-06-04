@@ -1,4 +1,7 @@
-# Luca Piras
+<!--
+title="Luca Piras"
+description="Welcome to my personal website!"
+-->
 
 Law school graduate, self-taught programmer, free/open source software advocate, aspiring digital forensics consultant, currently living in Bologna.
 

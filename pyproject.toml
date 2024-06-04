@@ -18,7 +18,7 @@ taskipy = "^1.12.2"
 [tool.taskipy.tasks]
 dev = { cmd = "flask run --debug --host 0.0.0.0", help = "Start Flask in development mode, and listen on all interfaces." }
 prod = { cmd = "gunicorn app:app", help = "Start Gunicorn, and listen only on localhost." }
-cv = { cmd = "./mkcv.sh", help = "Rebuild CV (requires TeXLive)." }
+cv = { cmd = "lualatex --jobname Piras_Luca_CV --output-directory=static Piras_Luca_CV.tex && rm static/Piras_Luca_CV.aux static/Piras_Luca_CV.out", help = "Rebuild CV (requires TeXLive)." }
 
 [build-system]
 requires = ["poetry-core"]

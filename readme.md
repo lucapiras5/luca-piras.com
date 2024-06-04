@@ -43,13 +43,13 @@ Start the venv, so you can use tasks:
 poetry shell
 ```
 
-Launch a production server with Gunicorn:
+Launch the development server:
 
 ```
-task prod
+task dev
 ```
 
-Rebuild the CV (requires TeXLive):
+(Optional) Rebuild the CV (requires TeXLive):
 
 ```
 task cv
