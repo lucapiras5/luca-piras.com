@@ -27,8 +27,11 @@ body {
 
 h1, h2, h3 {
     font-weight: normal;
+    margin: 1.5rem 0;
+}
+
+h2, h3 {
     text-align: center;
-    margin: 2rem 0;
 }
 
 #wrapper {
@@ -43,8 +46,11 @@ h1, h2, h3 {
 
 header, footer {
     font-size: 1.1rem;
-    text-align: center;
     margin: 3rem 0;
+}
+
+footer {
+    text-align: center;
 }
 
 .vertical-links {
@@ -60,7 +66,7 @@ header, footer {
     flex-direction: row;
     text-align: left;
     gap: 1rem;
-    justify-content: center;
+    --justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {

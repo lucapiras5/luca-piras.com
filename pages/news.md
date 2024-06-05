@@ -1,4 +1,6 @@
 <!--
 title = "News"
-description = "Website updates"
+description = "Updates for this website."
 -->
+
+*Coming soon!*

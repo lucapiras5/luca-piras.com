@@ -1,8 +1,7 @@
 <!--
 title = "Reasons for writing in English"
+description = "One may wonder why I'm writing in English, even though I was born, raised, and currently live in Italy.  Wouldn't it be more natural or reasonable for me to be writing in my own native language?"
 -->
-
-One may wonder why I'm writing in English, even though I was born, raised, and currently live in Italy.  Wouldn't it be more natural or reasonable for me to be writing in my own native language?
 
 There are multiple reasons.  The first is that I've been immersing myself in the language since my early teens.  The overwhelming amount of reading and writing that I do on a daily basis is in English, so it's simply easier for me to continue the trend.
 

@@ -44,7 +44,9 @@ class Layout:
         </div>
 
         <h1>{self.title}</h1>
-        <em>{self.description}</em>
+
+        {self.description}
+
         </header>
         {body}
         <footer>&copy; Luca Piras, 2024, CC BY-SA and AGPL-licensed, see the <a href="/legal-notices">legal notices</a>.</footer>

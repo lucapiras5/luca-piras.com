@@ -1,15 +1,17 @@
 <!--
 title = "CV / Resume"
-description = "CV / Resume"
+description = "This page contains my CV/Resume, my degree certificate and language certifications, a summary of my dissertation, and other learning experiences."
 -->
 
 ## CV
 
-[Curriculum vitae](/static/Piras_Luca_CV.pdf): also includes my contact information.
+I'm currently looking for an apprenticeship or employment.
+
+[Curriculum vitae](/static/Piras_Luca_CV.pdf): in Italian, also includes my contact information.
 
 ## Law School
 
-[Autodichiarazione sostitutiva della laurea con voti degli esami](static/Dichiarazione_sostitutiva_laurea_voti.pdf) (*Self-signed degree certificate with exam scores*): proves that I've obtained my law degree at the University of Bologna. It contains a list of scores for each exam, and the final score. I obtained the maximum score, **110/110 _cum laude_**.
+[Autodichiarazione sostitutiva della laurea con voti degli esami](static/Dichiarazione_sostitutiva_laurea_voti.pdf) (*Self-signed degree certificate with exam scores*): proves that I've obtained my law degree at the University of Bologna, it contains the final score (110/110 *cum laude*) and the scores for each exam.
 
 ## Language Certifications
 
