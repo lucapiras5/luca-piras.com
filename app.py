@@ -62,7 +62,7 @@ def read_file(filename: str):
         return fp.read()
 
 def read_markdown_file(filename: str):
-    return markdown(read_file(filename), extensions=['smarty', 'fenced_code'])
+    return markdown(read_file(filename), extensions=['smarty', 'fenced_code', 'toc'])
 
 def page_from_markdown_file(filename: str):
     rendered = read_markdown_file(filename)
