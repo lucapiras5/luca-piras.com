@@ -1,6 +1,6 @@
 <!--
 title = "CV / Resume"
-description = "This page contains my CV/Resume, my degree certificate and language certifications, a summary of my dissertation, and other learning experiences."
+description = "This page contains my CV/resume, my degree certificate and language certifications, a summary of my dissertation, and other learning experiences."
 -->
 
 ## CV
