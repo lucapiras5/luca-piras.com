@@ -26,19 +26,19 @@ I'm currently looking for an apprenticeship or employment.
 my final dissertation. Currently it's only available in Italian, but an English translation is in the works.
 The [source files](https://github.com/lucapiras5/tesi-informatica-forense) are available.
 
-The dissertation contains four chapters, which can be summarized as follows:
+The dissertation contains four chapters, the contents of which can be summarized as follows:
 
-1. I introduce the legal aspects of digital forensics and digital evidence, and why a *perizia* is the best way to introduce digital evidence in a trial according to the Italian criminal procedure code.
+1. The legal aspects of digital forensics and digital evidence, and why expert evidence and expert witnesses are the best way to acquire and evaluate digital evidence in a trial according to the Italian criminal procedure code.
 
-1. I demonstrate that the freedoms and rights provided by free and open source software (as opposed to proprietary and closed source software) best serve the scientific and legal needs of digital forensics.
+1. The freedoms and rights provided by free and open source software (as opposed to proprietary and closed source software), and how best serve the scientific and legal needs of digital forensics.
 
     Free software facilitates scientific research and peer review, allows for an in-depth cross-examination of expert witnesses, and ultimately results in a judicial decision that is better-informed and well-justified.
 
     The issues with *captatori informatici* (state-sponsored backdoors installed on mobile devices) demonstrate that <!--From a technical viewpoint, malware has to remain proprietary, closed-source, and hard to reverse-engineer (otherwise, software vendors could easily find the vulnerabilities that it exploits by reading the source code), but this casts doubt on the exact mode of operation of that software. From a legal viewpoint, the law doesn't regulate their use (it only regulates traditional wiretapping of conversations), which means they likely violate art. 15 of the Constitution. But even if their use was to be regulated, it'd be impossible to check if the software complies with said law.--> there's a two-way relationship between using free software and respecting constitutional freedoms within a criminal trial.
 
-1. I discuss how to develop reliable and well-tested software, that carries out repeatable (non-destructive) analyses with reproducibile (test-retest) results, and how to manage open source projects to ensure software quality, security and reliability.
+1. A list of best practices on how to develop reliable and well-tested software, that carries out repeatable (non-destructive) analyses with reproducibile (test-retest) results, and how to manage open source projects to ensure software quality, security and reliability.
 
-1. I provide various examples of free and open source software that is (or has been) used in criminal investigations. <!-- argue that it's possible to combine various programs through scripts, and improve existing generic programs to suit the needs of a forensic investigator, in addition to using monolithic and specialized software such as Autopsy. -->
+1. Various examples of free and open source software that is (or has been) used in criminal investigations. <!-- argue that it's possible to combine various programs through scripts, and improve existing generic programs to suit the needs of a forensic investigator, in addition to using monolithic and specialized software such as Autopsy. -->
 
 Ultimately, I conclude that free and open source software is the ideal model to develop software, and that it has no technical or legal drawbacks. The only factors holding free software back are cultural ones, such as the lack of trust in the model, lack of funding for developers, or lack of adoption by and training for professionals, all of which can be remedied.
 
