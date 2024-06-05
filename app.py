@@ -37,7 +37,7 @@ class Layout:
         <header>
         <div class="horizontal-links">
         <div class="link"><a href="/">Home</a></div>
-        <div class="link"><a href="/cv-certifications">CV & Certifications</a></div>
+        <div class="link"><a href="/cv-resume">CV / Resume</a></div>
         <div class="link"><a href="/personal-knowledge">Personal Knowledge</a></div>
         <div class="link"><a href="/news">News</a></div>
         <div class="link"><a href="/future-plans">Future Plans</a></div>

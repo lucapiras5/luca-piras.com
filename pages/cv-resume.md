@@ -1,6 +1,6 @@
 <!--
 title = "CV / Resume"
-description = "CV/Resume"
+description = "CV / Resume"
 -->
 
 ## CV
