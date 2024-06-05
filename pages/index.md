@@ -3,7 +3,7 @@ title="Luca Piras"
 description="Welcome to my personal website!"
 -->
 
-I'm a recent law school graduate (with top marks), a self-taught programmer, a free/open source software enthusiast and aspiring digital forensics consultant. I'm currently living in Bologna.
+I'm a recent law school graduate (with top marks), a self-taught programmer, a free/open source software enthusiast and an aspiring digital forensics consultant. I'm currently living in Bologna.
 
 See the links above for more details. See [here](/reasons-for-writing-in-english) as to why the website is in English.
 
