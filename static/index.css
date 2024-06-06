@@ -74,7 +74,10 @@ footer {
 /* 	display: flex; */
 /* 	flex-direction: column; */
 /* 	justify-content: center; */
-    gap: 2rem;
+    body {   font-size: 1.05rem; }
+    header, footer {
+	font-size: .95rem;
+    }
 }
 
 code { word-break: break-all; }
