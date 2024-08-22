@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
   --background-color: #071A26; /* Light gray background */
   --text-color: #eee; /* Dark gray text */
@@ -9,9 +11,9 @@ a { color: #F2B705; }
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   line-height: 1.6;
-  font-size: 1.15rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -35,7 +37,7 @@ h2, h3 {
 }
 
 #wrapper {
-    max-width: 40rem;
+    max-width: 60rem;
     margin: 0 auto;
     padding: 1rem;
 }
